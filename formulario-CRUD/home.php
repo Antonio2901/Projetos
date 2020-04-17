@@ -40,16 +40,12 @@ $conectar = new ConexaoDB();
                         <tr>
                             <th>Produto</th>
                             <th>Descrição</th>
-                            <th></th>
-                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>-</td>
                             <td>-</td>
-                            <td><a href = "editar.php"><button>Editar</button></a></td>
-                            <td><a href = "servicos/apagar.php"><button>Apagar</button></a></td>
                         </tr>
                     </tbody>        
                 </table>
@@ -82,8 +78,8 @@ $conectar = new ConexaoDB();
                         <tr>
                             <td><?php echo $value['nome']; ?></td>
                             <td><?php echo $value['descricao']; ?></td>
-                            <td><a href = "editar.php"><button>Editar</button></a></td>
-                            <td><a href = "servicos/apagar.php"><button>Apagar</button></a></td>
+                            <td><a href = "editar.php?id=<?php echo $value['id']; ?>"><button>Editar</button></a></td>
+                            <td><a href = "servicos/servico.php?operacao=apagar&&id=<?php echo $value['id']; ?>"><button>Apagar</button></a></td>
                         </tr>
                     <?php
                     }

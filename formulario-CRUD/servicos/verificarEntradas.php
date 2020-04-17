@@ -24,3 +24,9 @@ class Verificacao{
 
 
 }
+
+//teste metodos
+
+//$metodo = new Verificacao();
+
+//var_dump($metodo->verificarEntrada("antonio"));
